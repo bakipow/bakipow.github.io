@@ -1,0 +1,107 @@
+:root {
+	color-scheme: light dark;
+}
+
+body {
+	// color: light-dark(#555, #ccc);
+	//background-color: light-dark(#fff, #303);
+	color: #ccc;
+	background-color: #303;
+	background: #303 url(media/don.quixote.picasso.png) right bottom fixed no-repeat;
+	margin-left: 1em;
+	margin-right: 1em;
+	font:normal 1.1rem verdana,sans-serif;
+	line-height: 1.5rem;
+}
+
+#thegreatentailer{
+	padding-bottom:30px;
+	margin:0 auto;
+	max-width:900px;
+}
+
+.piccolo {
+	font-size:.7em;
+}
+
+.piccolomezzo {
+	font-size:.8em;
+}
+
+a {
+	color: #0fc;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0cf;
+	text-decoration: none;
+}
+
+.abbeynormal {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+blockquote {
+	border-left: 3px solid #0cf;
+	padding:.5em 10px;
+}
+
+ul{
+	list-style-type:square;
+}
+
+p,blockquote,ol,ul {
+	margin:15px 50px 15px 50px;
+	font-weight:normal;
+}
+
+.embiggen {
+	margin:20px 0px 0px 0px;
+	text-align:center;
+	border-top: dashed 1px #99ff99;
+	border-bottom: dashed 1px #99ff99;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.destra {
+	text-align: right;	
+	}
+
+.titolo {
+	color: #0cf;
+	}
+
+.caveat {
+	color: #0cf;
+	}
+
+/* for the piccolo screens */
+@media (max-width: 500px) {
+
+	p {
+		text-align: justify;
+	}
+
+	p,blockquote,ol,ul{
+		margin: 0;
+
+	}
+
+	.embiggen{
+		margin:0;
+		text-align:center;
+	}
+
+}
