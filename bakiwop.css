@@ -87,6 +87,15 @@ p,blockquote,ol,ul {
 	color: #0cf;
 	}
 
+.dinkus {
+	width: 30px;
+	height: auto;
+	}
+
+.tilde {
+	color: #f90;
+	}
+
 /* for the piccolo screens */
 @media (max-width: 500px) {
 
