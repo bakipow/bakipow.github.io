@@ -103,11 +103,6 @@ p,blockquote,ol,ul {
 		text-align: justify;
 	}
 
-	p,blockquote,ol,ul{
-		margin: 0;
-
-	}
-
 	.embiggen{
 		margin:0;
 		text-align:center;
