@@ -104,8 +104,9 @@ p,blockquote,ol,ul {
 	}
 
 	.embiggen{
-		margin:0;
-		text-align:center;
+		margin-left: 0;
+		margin-right: 0;
+		text-align: center;
 	}
 
 }
