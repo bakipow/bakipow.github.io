@@ -4,7 +4,7 @@
 
 body {
 	// color: light-dark(#555, #ccc);
-	//background-color: light-dark(#fff, #303);
+	// background-color: light-dark(#fff, #303);
 	color: #ccc;
 	background-color: #303;
 	background: #303 url(media/don.quixote.picasso.png) right bottom fixed no-repeat;
@@ -99,8 +99,17 @@ p,blockquote,ol,ul {
 /* for the piccolo screens */
 @media (max-width: 500px) {
 
+	body {
+		line-height: 1.1rem;
+	}
+
 	p {
 		text-align: justify;
+	}
+
+	p,blockquote,ol,ul{
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
 	.embiggen{
