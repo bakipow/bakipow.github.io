@@ -57,8 +57,12 @@ blockquote {
 	padding:.5em 10px;
 }
 
-ul{
+ul {
 	list-style-type:square;
+}
+
+ul li::marker {
+	color: #f90;
 }
 
 p,blockquote,ol,ul {
