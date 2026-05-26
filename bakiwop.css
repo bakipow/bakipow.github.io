@@ -73,8 +73,8 @@ p,blockquote,ol,ul {
 .embiggen {
 	margin:20px 0px 0px 0px;
 	text-align:center;
-	border-top: dashed 1px #99ff99;
-	border-bottom: dashed 1px #99ff99;
+	border-top: dashed 1px #f90;
+	border-bottom: dashed 1px #f90;
 	padding-top:25px;
 	padding-bottom:25px;
 }
