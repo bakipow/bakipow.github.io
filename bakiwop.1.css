@@ -14,6 +14,10 @@ body {
 	line-height: 1.5rem;
 }
 
+h1 {
+	font:normal 1.3rem verdana,sans-serif;
+}
+
 main {
 	padding-bottom:30px;
 	margin:0 auto;
@@ -21,7 +25,7 @@ main {
 }
 
 footer {
-	padding-top:50px;
+	padding-top:100px;
 	margin:0 auto;
 	max-width:900px;
 }
@@ -104,6 +108,8 @@ p,blockquote,ol,ul {
 .dinkus {
 	width: 30px;
 	height: auto;
+	margin-top:75px;
+	margin-bottom:75px;
 	}
 
 .tilde {
