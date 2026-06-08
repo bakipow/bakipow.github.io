@@ -14,10 +14,47 @@ body {
 	line-height: 1.5rem;
 }
 
-#thegreatentailer{
+h1 {
+	font:normal 1.5rem verdana,sans-serif;
+}
+
+h1.particulars {
+	font:normal 1.1rem verdana,sans-serif;
+}
+
+h2 {
+	text-align: right;
+	font-size:.8em;
+}
+
+h2.particulars {
+	color: #0cf;
+	text-align: left;
+	font:normal 1.1rem verdana,sans-serif;
+	margin-top: 3em;
+}
+
+h2.archivi {
+	color: #0cf;
+	text-align: center;
+	font:normal 1.1rem verdana,sans-serif;
+	margin-top: 3em;
+}
+
+main {
 	padding-bottom:30px;
 	margin:0 auto;
 	max-width:900px;
+}
+
+footer {
+	padding-top:100px;
+	margin:0 auto;
+	max-width:900px;
+}
+
+nav {
+	text-align: center;
 }
 
 .piccolo {
@@ -65,7 +102,7 @@ ul li::marker {
 	color: #f90;
 }
 
-p,blockquote,ol,ul {
+p,blockquote,ol,ul,h2 {
 	margin:15px 50px 15px 50px;
 	font-weight:normal;
 }
@@ -94,6 +131,8 @@ p,blockquote,ol,ul {
 .dinkus {
 	width: 30px;
 	height: auto;
+	margin-top:75px;
+	margin-bottom:75px;
 	}
 
 .tilde {
@@ -104,19 +143,19 @@ p,blockquote,ol,ul {
 @media (max-width: 500px) {
 
 	body {
-		line-height: 1.2rem;
+		//line-height: 1.2rem;
 	}
 
 	p {
-		text-align: justify;
+		//text-align: justify;
 	}
 
-	p,blockquote,ol,ul{
+	p,blockquote,ol,ul,h2 {
 		margin-left: 1px;
 		margin-right: 1px;
 	}
 
-	.embiggen{
+	.embiggen {
 		margin-left: 0;
 		margin-right: 0;
 		text-align: center;
