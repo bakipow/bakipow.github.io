@@ -102,7 +102,7 @@ ul li::marker {
 	color: #f90;
 }
 
-p,blockquote,ol,ul,h2 {
+p,blockquote,ol,ul,h2,details {
 	margin:15px 50px 15px 50px;
 	font-weight:normal;
 }
@@ -150,7 +150,7 @@ p,blockquote,ol,ul,h2 {
 		//text-align: justify;
 	}
 
-	p,blockquote,ol,ul,h2 {
+	p,blockquote,ol,ul,h2,details {
 		margin-left: 1px;
 		margin-right: 1px;
 	}

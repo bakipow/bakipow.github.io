@@ -5,8 +5,30 @@
 		<title>baki-didle-wop-icious</title>
 		<link>https://bakiwop.com/</link>
 		<description>Caveat Lector</description>
-		<lastBuildDate>Sun, 07 Jun 2026 15:00:42 PDT</lastBuildDate>
+		<lastBuildDate>Mon, 08 Jun 2026 16:48:42 PDT</lastBuildDate>
 		<language>en-us</language>
+
+
+
+
+
+
+		<item>
+			<title>2026.06.08</title>
+			<link>https://bakiwop.com/2026.06.html#18</link>
+			<description>terminators don't care about accessibility.</description>
+			<content:encoded>
+<![CDATA[
+<p>Worked on the site's accessibility. Think I did better? Possibly?</p>
+<p><a href="https://wave.webaim.org/report#/bakiwop.com">WAVE says better.</a> <a href="https://www.accessibilitychecker.org/audit/?website=bakiwop.com&flag=us#">AccessiblityChecker says better.</a> <a href="https://freeaccessibilitychecker.skynettechnologies.com/?website=bakiwop.com">Skynet says I suck</a>, but why would I believe them when they're just going to unleash terminators upon the world and destroy us all? They can't fool me. Terminators don't care about accessibility.</p>
+]]>
+			</content:encoded>
+			<pubDate>Mon, 08 Jun 2026 16:48:42 PDT</pubDate>
+			<guid>https://bakiwop.com/2026.06.html#18</guid>
+		</item>
+
+
+
 
 
 
