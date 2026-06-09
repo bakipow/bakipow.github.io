@@ -51,6 +51,7 @@ footer {
 	padding-top:100px;
 	margin:0 auto;
 	max-width:900px;
+	font-size:.8em;
 }
 
 nav {
@@ -126,6 +127,7 @@ p,blockquote,ol,ul,h2,details {
 
 .caveat {
 	color: #0cf;
+	margin-top: 2em;
 	}
 
 .dinkus {
