@@ -47,11 +47,16 @@ main {
 	max-width:900px;
 }
 
+header {
+	display: none;
+}
+
 footer {
 	padding-top:100px;
 	margin:0 auto;
 	max-width:900px;
 	font-size:.8em;
+	text-align: center;
 }
 
 nav {

@@ -1,0 +1,108 @@
+body {
+	font:normal 1em;
+}
+
+h1 {
+	display: all;
+}
+
+h1.particulars {
+	display: all;
+}
+
+h2 {
+	display: all;
+}
+
+h2.particulars {
+	display: all;
+}
+
+h2.archivi {
+	text-align: center;
+}
+
+main {
+	display: all;
+}
+
+header,footer {
+	text-align: center;
+}
+
+nav {
+	display: none;
+}
+
+.piccolo {
+	display: all;
+}
+
+.piccolomezzo {
+	display: all;
+}
+
+a {
+	display: all;
+}
+
+.abbeynormal {
+	text-align: center;
+}
+
+img {
+	width:100%;
+	height:auto;
+}
+
+video {
+	width:100%;
+	height:auto;
+}
+
+blockquote {
+	display: all;
+}
+
+ul {
+	list-style-type:square;
+}
+
+ul li::marker {
+	display: all;
+}
+
+p,blockquote,ol,ul,h2,details {
+	display: all;
+}
+
+.embiggen {
+	display: all;
+}
+
+.destra {
+	text-align: right;	
+	}
+
+.titolo {
+	display: all;
+	}
+
+.caveat {
+	display: all;
+	}
+
+.dinkus {
+	display: none;
+	}
+
+.tilde {
+	display: all;
+	}
+
+.chill {
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: auto;
+}
