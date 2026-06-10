@@ -106,3 +106,7 @@ p,blockquote,ol,ul,h2,details {
 	display: block;
 	margin: auto;
 }
+
+details,summary {
+	display:all;
+}
