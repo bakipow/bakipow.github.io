@@ -135,6 +135,10 @@ p,blockquote,ol,ul,h2,details {
 	margin-top: 2em;
 	}
 
+.asterisk {
+	color: #0cf;
+	}
+
 .dinkus {
 	width: 30px;
 	height: auto;
