@@ -108,6 +108,10 @@ ul li::marker {
 	color: #f90;
 }
 
+ul.di li {
+	padding-bottom:15px;
+	}
+
 p,blockquote,ol,ul,h2,details {
 	margin:15px 50px 15px 50px;
 	font-weight:normal;
