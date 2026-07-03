@@ -150,6 +150,11 @@ p,blockquote,ol,ul,h2,details {
 	color: #f90;
 	}
 
+.chill {
+	width: 100px;
+	height: 100px;
+	}
+
 /* for the piccolo screens */
 @media (max-width: 500px) {
 
