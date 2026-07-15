@@ -41,6 +41,20 @@ h2.archivi {
 	margin-top: 3em;
 }
 
+h2.stories {
+	color: #0cf;
+	text-align: center;
+	font:normal 1.4rem verdana,sans-serif;
+	margin-top: 3em;
+}
+
+h3.stories {
+	color: #0cf;
+	text-align: center;
+	font:normal 1.3rem verdana,sans-serif;
+	margin-top: 3em;
+}
+
 main {
 	padding-bottom:30px;
 	margin:0 auto;
