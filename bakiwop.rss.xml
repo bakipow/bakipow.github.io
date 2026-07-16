@@ -5,8 +5,28 @@
 		<title>baki-didle-wop-icious</title>
 		<link>https://bakiwop.com/</link>
 		<description>Caveat Lector</description>
-		<lastBuildDate>Sun, 12 Jul 2026 13:03:42 PDT</lastBuildDate>
+		<lastBuildDate>Wed, 15 Jul 2026 19:18:42 PDT</lastBuildDate>
 		<language>en-us</language>
+
+
+
+
+
+
+		<item>
+			<title>2026.07.15</title>
+			<link>https://bakiwop.com/2026.07.html#35</link>
+			<description>firefox dis track.</description>
+			<content:encoded>
+<![CDATA[
+<p>Dang, Firefox view-source parsing error reporter, that's cold. "Garbage after," indeed.</p>
+<p class="embiggen"><img src="media/garbage.after.png" alt="garbage message from firefox" title="garbage after..."/></p>
+]]>
+			</content:encoded>
+			<pubDate>Wed, 15 Jul 2026 19:18:42 PDT</pubDate>
+			<guid>https://bakiwop.com/2026.07.html#35</guid>
+		</item>
+
 
 
 
