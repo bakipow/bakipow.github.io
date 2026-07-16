@@ -173,6 +173,8 @@ p,blockquote,ol,ul,h2,details {
 	height: 100px;
 	}
 
+.illuminated{font-size:.7em;font-weight:900;font-family:courier,courier new;color:#FF3C00;}
+
 /* for the piccolo screens */
 @media (max-width: 500px) {
 
