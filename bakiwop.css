@@ -55,6 +55,10 @@ h3.stories {
 	margin-top: 3em;
 }
 
+.lighters{color:#a0d6e5;}
+.lightgray{color:#999;}
+.underlines{text-decoration: underline;}
+
 main {
 	padding-bottom:30px;
 	margin:0 auto;
