@@ -118,6 +118,11 @@ blockquote {
 	padding: 1em;
 }
 
+blockquote.plain {
+	border-left: 1px dashed #0cf;
+	padding: 1em;
+}
+
 ul {
 	list-style-type:square;
 }
@@ -178,6 +183,7 @@ p,blockquote,ol,ul,h2,details {
 	}
 
 .illuminated{font-size:.7em;font-weight:900;font-family:courier,courier new;color:#FF3C00;}
+.illuminatedcolor{font-weight:900;font-family:courier,courier new;color:#FF3C00;}
 
 /* for the piccolo screens */
 @media (max-width: 500px) {
