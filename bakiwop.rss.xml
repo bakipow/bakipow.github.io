@@ -5,8 +5,31 @@
 		<title>baki-didle-wop-icious</title>
 		<link>https://bakiwop.com/</link>
 		<description>Caveat Lector</description>
-		<lastBuildDate>Tue, 11 Aug 2026 09:05:42 PDT</lastBuildDate>
+		<lastBuildDate>Wed, 12 Aug 2026 10:11:42 PDT</lastBuildDate>
 		<language>en-us</language>
+
+
+
+
+
+
+		<item>
+			<title>2026.08.12</title>
+			<link>https://bakiwop.com/2026.08.html#6</link>
+			<description>kites.</description>
+			<content:encoded>
+<![CDATA[
+<p class="embiggen">
+	<video controls loop>
+		<source src="media/lc.kites.mp4" type="video/mp4">
+	</video>
+</p>
+]]>
+			</content:encoded>
+			<pubDate>Wed, 12 Aug 2026 10:11:42 PDT</pubDate>
+			<guid>https://bakiwop.com/2026.08.html#6</guid>
+		</item>
+
 
 
 
