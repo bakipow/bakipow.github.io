@@ -11,7 +11,7 @@ body {
 	margin-left: 1em;
 	margin-right: 1em;
 	font:normal 1.1rem verdana,sans-serif;
-	line-height: 1.5rem;
+	line-height: 1.8rem;
 }
 
 h1 {
@@ -140,7 +140,7 @@ ul.ganzo li {
 	}
 
 p,blockquote,ol,ul,h2,details {
-	margin: 15px 50px 15px 50px;
+	margin: 15px 50px 30px 50px;
 	font-weight:normal;
 }
 
