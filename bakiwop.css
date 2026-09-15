@@ -9,7 +9,7 @@ body {
 	background-color: #303;
 	// background: #303 url(media/don.quixote.picasso.png) right bottom fixed no-repeat;
 	background: url(media/don.quixote.picasso.png) right bottom fixed no-repeat, url(media/bakibg.png) center bottom fixed no-repeat;
-	// background-size: cover;
+	background-size: auto, cover;
 	margin-left: 1em;
 	margin-right: 1em;
 	font:normal 1.1rem verdana,sans-serif;
