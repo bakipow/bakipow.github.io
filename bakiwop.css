@@ -8,21 +8,24 @@ body {
 	color: #ddd;
 	background-color: #303;
 	// background: #303 url(media/don.quixote.picasso.png) right bottom fixed no-repeat;
-	background: #303 url(media/bakibg.png) center bottom fixed no-repeat;
-	background-size: cover;
+	background: url(media/don.quixote.picasso.png) right bottom fixed no-repeat, url(media/bakibg.png) center bottom fixed no-repeat;
+	// background-size: cover;
 	margin-left: 1em;
 	margin-right: 1em;
 	font:normal 1.1rem verdana,sans-serif;
 	line-height: 1.8rem;
 }
 
-bg {
-	background-image: url("media/bakibg.png");
-	height: 100%; 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+/*
+div.don {
+	position: fixed;
+	background: url(media/don.quixote.picasso.png) right bottom fixed no-repeat;
+	bottom: 0;
+	right: 0;
+	width: 118px;
+	height: 150px;
 }
+*/
 
 h1 {
 	font:normal 1.5rem verdana,sans-serif;
