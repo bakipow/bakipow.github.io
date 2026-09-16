@@ -330,3 +330,10 @@ p,blockquote,ol,ul,h2,details {
     margin-top: 0.25em;
     color: #909;
 }
+
+.comment-note {
+    margin: -0.5em 0 2em 0;
+    color: #c0c;
+    font-size: 0.8em;
+}
+
