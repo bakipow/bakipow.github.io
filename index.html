@@ -386,18 +386,18 @@ document.querySelectorAll(".comments").forEach(async (section) => {
 
         try {
 
-            const response = await fetch(
-                `${COMMENTS_API}/comment.php`,
-                {
-                    method: "POST",
-                    credentials: "include",
-                   body: new URLSearchParams({
-			post: post,
-			name: name,
-			body: body,
-			answer: answer
-			})
-                }
+const response = await fetch(
+    `${COMMENTS_API}/comment.php`,
+    {
+        method: "POST",
+        credentials: "include",
+        body: new URLSearchParams({
+            post: post,
+            name: name,
+            body: body,
+            answer: answer
+        })
+    }
             );
 
             const data = await response.json();
