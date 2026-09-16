@@ -230,13 +230,13 @@ p,blockquote,ol,ul,h2,details {
     margin-top: 3em;
     margin-bottom: 3em;
     text-align: center;
-    border-top: 2px dashed #f90;
+    border-top: 2px dashed #909;
     padding-top: 1em;
 }
 
 .comments h3 {
     color: #0cf;
-    font-size:.8em;
+    font-size: .8em;
     margin: 0 0 1em 0;
 }
 
@@ -261,9 +261,9 @@ p,blockquote,ol,ul,h2,details {
 .comment::after {
     content: "";
     display: block;
-    width: 50px;
+    width: 150px;
     margin: 1.5em auto 0;
-    border-bottom: 2px dotted #ccc;
+    border-bottom: 2px dotted #909;
 }
 
 
@@ -285,6 +285,7 @@ p,blockquote,ol,ul,h2,details {
     display: block;
 }
 
+/*
 .comment-form input[type="text"],
 .comment-form input[type="number"],
 .comment-form textarea {
@@ -295,6 +296,22 @@ p,blockquote,ol,ul,h2,details {
     font: inherit;
     text-align: center;
 }
+*/
+
+.comment-form input[type="text"],
+.comment-form input[type="number"],
+.comment-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 600px;
+    padding: 0.5em;
+    font: inherit;
+    text-align: center;
+    background-color: #303;
+    border: 1px solid #909;
+    color: #909;
+}
+
 
 .comment-form textarea {
     min-height: 8em;
