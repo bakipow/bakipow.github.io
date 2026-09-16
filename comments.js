@@ -33,14 +33,22 @@ document.querySelectorAll(".comments").forEach(async (section) => {
             const article = document.createElement("article");
             article.className = "comment";
 
-            const name = document.createElement("strong");
-            name.textContent = comment.name || "Anonymous";
+const name = document.createElement("strong");
+name.textContent = comment.name || "Anonymous";
 
-            const body = document.createElement("p");
-            body.textContent = comment.body;
+const date = document.createElement("small");
 
-            article.appendChild(name);
-            article.appendChild(body);
+const commentDate = new Date(comment.created_at * 1000);
+
+date.textContent = commentDate.toLocaleString();
+
+const body = document.createElement("p");
+body.textContent = comment.body;
+
+article.appendChild(name);
+article.appendChild(date);
+article.appendChild(body);
+
 
             list.appendChild(article);
         });

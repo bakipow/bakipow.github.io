@@ -308,10 +308,25 @@ p,blockquote,ol,ul,h2,details {
 
 .comment-form button {
     font: inherit;
-    padding: 0.4em 0.8em;
+    padding: 0.25em .5em;
+    background-color: #0fc;
+    border: 1px solid #f90;
+    color: #f90;
     cursor: pointer;
 }
 
+.comment-form button:hover {
+    background-color: #0cf;
+    color: #909;
+}
+
+
 .comment-message {
     min-height: 1.5em;
+}
+
+.comment small {
+    display: block;
+    margin-top: 0.25em;
+    color: #909;
 }
