@@ -7,22 +7,36 @@ document.querySelectorAll(".comments").forEach(async (section) => {
     const form = section.querySelector(".comment-form");
     const question = section.querySelector(".math-question");
     const message = section.querySelector(".comment-message");
+    const submitButton = form.querySelector('button[type="submit"]');
 
     async function getChallenge() {
+
         const response = await fetch(
             `${COMMENTS_API}/challenge.php`,
-            { credentials: "include" }
+            {
+                credentials: "include"
+            }
         );
+
+        if (!response.ok) {
+            throw new Error("Unable to get math question.");
+        }
 
         const data = await response.json();
 
         question.textContent = data.question;
     }
 
+
     async function loadComments() {
+
         const response = await fetch(
             `${COMMENTS_API}/comments.php?post=${encodeURIComponent(post)}`
         );
+
+        if (!response.ok) {
+            throw new Error("Unable to load comments.");
+        }
 
         const data = await response.json();
 
@@ -33,40 +47,106 @@ document.querySelectorAll(".comments").forEach(async (section) => {
             const article = document.createElement("article");
             article.className = "comment";
 
-const name = document.createElement("strong");
-name.textContent = comment.name || "Anonymous";
 
-const date = document.createElement("small");
+            /*
+             * Commenter's name
+             */
 
-const commentDate = new Date(comment.created_at * 1000);
+            const name = document.createElement("strong");
 
-date.textContent = commentDate.toLocaleString();
+            name.textContent =
+                comment.name || "Anonymous";
 
-const body = document.createElement("p");
-body.textContent = comment.body;
 
-article.appendChild(name);
-article.appendChild(date);
-article.appendChild(body);
+            /*
+             * Date and time
+             */
 
+            const date = document.createElement("small");
+
+            const commentDate =
+                new Date(comment.created_at * 1000);
+
+            date.textContent =
+                commentDate.toLocaleString();
+
+
+            /*
+             * Comment body
+             */
+
+            const body = document.createElement("p");
+
+            body.textContent =
+                comment.body;
+
+
+            /*
+             * Assemble comment
+             */
+
+            article.appendChild(name);
+
+            article.appendChild(date);
+
+            article.appendChild(body);
 
             list.appendChild(article);
         });
     }
 
-    await getChallenge();
-    await loadComments();
+
+    /*
+     * Load the initial math question
+     * and existing comments.
+     */
+
+    try {
+
+        await getChallenge();
+
+        await loadComments();
+
+    } catch (error) {
+
+        message.textContent =
+            error.message;
+    }
+
+
+    /*
+     * Handle comment submission.
+     */
 
     form.addEventListener("submit", async (event) => {
 
         event.preventDefault();
 
+
+        /*
+         * Disable the button immediately.
+         *
+         * This prevents double-clicks from
+         * creating duplicate comments.
+         */
+
+        submitButton.disabled = true;
+
         message.textContent = "Posting...";
 
-        const name = form.elements.name.value.trim();
-        const body = form.elements.body.value.trim();
-        const answer = form.elements.answer.value.trim();
-        const website = form.elements.website.value.trim();
+
+        const name =
+            form.elements.name.value.trim();
+
+        const body =
+            form.elements.body.value.trim();
+
+        const answer =
+            form.elements.answer.value.trim();
+
+        const website =
+            form.elements.website.value.trim();
+
 
         try {
 
@@ -74,7 +154,9 @@ article.appendChild(body);
                 `${COMMENTS_API}/comment.php`,
                 {
                     method: "POST",
+
                     credentials: "include",
+
                     body: new URLSearchParams({
                         post: post,
                         name: name,
@@ -85,26 +167,91 @@ article.appendChild(body);
                 }
             );
 
-            const data = await response.json();
+
+            const data =
+                await response.json();
+
 
             if (!response.ok) {
-                throw new Error(data.error || "Unable to post comment");
+
+                throw new Error(
+                    data.error ||
+                    "Unable to post comment"
+                );
             }
 
-            message.textContent = "Comment posted!";
+
+            /*
+             * Successful submission.
+             */
+
+            message.textContent =
+                "Comment posted!";
+
+
+            /*
+             * Clear the form.
+             */
 
             form.elements.name.value = "";
+
             form.elements.body.value = "";
+
             form.elements.answer.value = "";
 
+
+            /*
+             * Get a fresh math question.
+             */
+
             await getChallenge();
+
+
+            /*
+             * Reload comments so the new
+             * comment appears immediately.
+             */
+
             await loadComments();
+
+
+            /*
+             * Allow another submission.
+             */
+
+            submitButton.disabled = false;
 
         } catch (error) {
 
-            message.textContent = error.message;
+            message.textContent =
+                error.message;
 
-            await getChallenge();
+
+            /*
+             * The request failed, so allow
+             * the visitor to try again.
+             */
+
+            submitButton.disabled = false;
+
+
+            /*
+             * The previous math question may
+             * have been consumed, so get a new one.
+             */
+
+            try {
+
+                await getChallenge();
+
+            } catch (challengeError) {
+
+                console.error(
+                    challengeError
+                );
+            }
         }
+
     });
+
 });
