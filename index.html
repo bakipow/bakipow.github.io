@@ -335,8 +335,6 @@ document.querySelectorAll(".comments").forEach(async (section) => {
     const question = section.querySelector(".math-question");
     const message = section.querySelector(".comment-message");
 
-    let mathAnswer = null;
-
     async function getChallenge() {
         const response = await fetch(
             `${COMMENTS_API}/challenge.php`,
@@ -375,13 +373,7 @@ document.querySelectorAll(".comments").forEach(async (section) => {
         });
     }
 
-    /*
-     * Get the math question.
-     *
-     * The answer itself stays on the server.
-     */
     await getChallenge();
-
     await loadComments();
 
     form.addEventListener("submit", async (event) => {
@@ -390,26 +382,26 @@ document.querySelectorAll(".comments").forEach(async (section) => {
 
         message.textContent = "Posting...";
 
-	const name = form.elements.name.value.trim();
-	const body = form.elements.body.value.trim();
-	const answer = form.elements.answer.value.trim();
-	const website = form.elements.website.value.trim();
+        const name = form.elements.name.value.trim();
+        const body = form.elements.body.value.trim();
+        const answer = form.elements.answer.value.trim();
+        const website = form.elements.website.value.trim();
 
         try {
 
-const response = await fetch(
-    `${COMMENTS_API}/comment.php`,
-    {
-        method: "POST",
-        credentials: "include",
-        body: new URLSearchParams({
-            post: post,
-            name: name,
-            body: body,
-            answer: answer,
-	    website: website
-        })
-    }
+            const response = await fetch(
+                `${COMMENTS_API}/comment.php`,
+                {
+                    method: "POST",
+                    credentials: "include",
+                    body: new URLSearchParams({
+                        post: post,
+                        name: name,
+                        body: body,
+                        answer: answer,
+                        website: website
+                    })
+                }
             );
 
             const data = await response.json();
