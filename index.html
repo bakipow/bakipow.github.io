@@ -65,6 +65,16 @@
 
 <form class="comment-form">
 
+<input
+    type="text"
+    name="website"
+    value=""
+    tabindex="-1"
+    autocomplete="off"
+    aria-hidden="true"
+    style="position:absolute;left:-10000px;width:1px;height:1px;"
+>
+
 <p>
 <label>
 Name <small>(optional)</small><br>
@@ -380,9 +390,10 @@ document.querySelectorAll(".comments").forEach(async (section) => {
 
         message.textContent = "Posting...";
 
-        const name = form.elements.name.value.trim();
-        const body = form.elements.body.value.trim();
-        const answer = form.elements.answer.value.trim();
+	const name = form.elements.name.value.trim();
+	const body = form.elements.body.value.trim();
+	const answer = form.elements.answer.value.trim();
+	const website = form.elements.website.value.trim();
 
         try {
 
@@ -396,6 +407,7 @@ const response = await fetch(
             name: name,
             body: body,
             answer: answer
+	    website: website
         })
     }
             );
