@@ -237,21 +237,13 @@ p,blockquote,ol,ul,h2,details {
 
 .comments h3 {
     color: #0cf;
-    font-size: .8em;
+    font-size: 1em;
     margin: 0 0 1em 0;
 }
 
 .comment-list {
     margin-bottom: 2em;
 }
-
-/*
-.comment {
-    margin: 1.5em 0;
-    padding: 0 0 1.5em 0;
-    border-bottom: 1px solid #ccc;
-}
-*/
 
 .comment {
     margin: 1.5em 0;
@@ -284,6 +276,7 @@ p,blockquote,ol,ul,h2,details {
 
 .comment-form label {
     display: block;
+	color: #f90;
 }
 
 .comment-form input[type="text"],
