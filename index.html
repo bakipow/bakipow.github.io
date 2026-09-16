@@ -391,15 +391,12 @@ document.querySelectorAll(".comments").forEach(async (section) => {
                 {
                     method: "POST",
                     credentials: "include",
-                    headers: {
-                        "Content-Type": "application/json"
-                    },
-                    body: JSON.stringify({
-                        post: post,
-                        name: name,
-                        body: body,
-                        answer: answer
-                    })
+                   body: new URLSearchParams({
+			post: post,
+			name: name,
+			body: body,
+			answer: answer
+			})
                 }
             );
 
