@@ -16,16 +16,6 @@ body {
 	line-height: 1.8rem;
 }
 
-/*
-div.don {
-	position: fixed;
-	background: url(media/don.quixote.picasso.png) right bottom fixed no-repeat;
-	bottom: 0;
-	right: 0;
-	width: 118px;
-	height: 150px;
-}
-*/
 
 h1 {
 	font:normal 1.5rem verdana,sans-serif;
@@ -246,7 +236,7 @@ p,blockquote,ol,ul,h2,details {
 
 .comments h3 {
     color: #0cf;
-    font-size: 1.5em;
+    font-size:.8em;
     margin: 0 0 1em 0;
 }
 
@@ -254,15 +244,32 @@ p,blockquote,ol,ul,h2,details {
     margin-bottom: 2em;
 }
 
+/*
 .comment {
     margin: 1.5em 0;
     padding: 0 0 1.5em 0;
     border-bottom: 1px solid #ccc;
 }
+*/
+
+.comment {
+    margin: 1.5em 0;
+    padding: 0 0 1.5em 0;
+    border-bottom: none;
+}
+
+.comment::after {
+    content: "";
+    display: block;
+    width: 50px;
+    margin: 1.5em auto 0;
+    border-bottom: 2px dotted #ccc;
+}
+
 
 .comment strong {
     color: #f90;
-    font-size: 1.5em;
+    font-size: .8em;
     font-weight: bold;
 }
 
