@@ -232,6 +232,7 @@ p,blockquote,ol,ul,h2,details {
     text-align: center;
     border-top: 2px dashed #909;
     padding-top: 1em;
+	font-size: .8em;
 }
 
 .comments h3 {
