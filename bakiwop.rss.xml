@@ -5,8 +5,27 @@
 		<title>baki-didle-wop-icious</title>
 		<link>https://bakiwop.com/</link>
 		<description>Caveat Lector</description>
-		<lastBuildDate>Wed, 23 Sep 2026 10:10:42 PDT</lastBuildDate>
+		<lastBuildDate>Sat, 26 Sep 2026 11:40:42 PDT</lastBuildDate>
 		<language>en-us</language>
+
+
+
+
+
+
+
+		<item>
+			<title>2026.09.26</title>
+			<link>https://bakiwop.com/2026.09.html#14</link>
+			<description>comments</description>
+			<content:encoded>
+<![CDATA[
+<p>Moved the comments to <a href="comments.html">their own page</a>. They're kinda more like a guestbook now? Kinda? Whatever they are, <a href="comments.html">they're over here</a>.</p>
+]]>
+			</content:encoded>
+			<pubDate>Sat, 26 Sep 2026 11:40:42 PDT</pubDate>
+			<guid>https://bakiwop.com/2026.09.html#14</guid>
+		</item>
 
 
 
